@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Churrascômetro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <div id="forms-section">
+      <section id="access-form" class="form-container">
+        <form>
+          <label for="name-input">Nome</label>
+          <input type="text" id="name-input" name="name-input" required>
+
+          <label for="email-input">Email</label>
+          <input type="email" id="email-input" name="email-input" required>
+
+          <label for="cep-input">CEP</label>
+          <input type="number" id="cep-input" name="cep-input" maxlength="7" required>
+
+          <span>
+            <input type="checkbox" id="promotional-emails" name="promotional-emails" checked>
+            <label for="promotional-emails">Aceito receber e-mails com promoções</label>
+          </span>
+          <button type="button" id="access-button" class="send-button">Acessar</button>
+          <button type="button" id="reset-button" class="send-button">Limpar dados</button>
+        </form>
+      </section>
+
+      <section id="guests-form" class="form-container">
+        <form>
+          <label for="adults-amount">Quantos adultos?</label>
+          <div class="input-guest">
+            <button type="button" id="adults-decrement" class="steps-button">-</button>
+            <input type="number" id="adults-amount" name="adults-amount" placeholder="0" readonly>
+            <button type="button" id="adults-increment" class="steps-button">+</button>
+          </div>
+          <label for="children-amount">Quantas crianças?</label>
+          <div class="input-guest">
+            <button type="button" id="children-decrement" class="steps-button">-</button>
+            <input type="number" id="children-amount" name="children-amount" placeholder="0" readonly>
+            <button type="button" id="children-increment" class="steps-button">+</button>
+          </div>
+          <label for="beer-amount">Quantos vão beber cerveja?</label>
+          <div class="input-guest">
+            <button type="button" id="beer-decrement" class="steps-button">-</button>
+            <input type="number" id="beer-amount" name="beer-amount" placeholder="0" readonly>
+            <button type="button" id="beer-increment" class="steps-button">+</button>
+          </div>
+          <button type="button" id="calculate-button" class="send-button">Calcular</button>
+        </form>
+      </section>
+    </div>
+
+    <section id="shopping-list" hidden>
+      <table>
+        <thead>
+          <tr>
+            <th>Carne</th>
+            <th>Pão de alho</th>
+            <th>Carvão</th>
+            <th>Sal</th>
+            <th>Gelo</th>
+            <th>Refrigerante</th>
+            <th>Água</th>
+            <th>Cerveja</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td id="meat-field"></td>
+            <td id="garlicBread-field"></td>
+            <td id="charcoalBriquettes-field"></td>
+            <td id="salt-field"></td>
+            <td id="ice-field"></td>
+            <td id="softDrinks-field"></td>
+            <td id="water-field"></td>
+            <td id="beer-field"></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>

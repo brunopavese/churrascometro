@@ -1,0 +1,19 @@
+{
+  "name": "churrascometro",
+  "version": "1.0.0",
+  "description": "Projeto final de calculadora de itens para o módulo de Frontend Dinâmico do curso Santander Coders 2023",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunopavese/churrascometro.git"
+  },
+  "author": "Bruno Pavese",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunopavese/churrascometro/issues"
+  },
+  "homepage": "https://github.com/brunopavese/churrascometro#readme"
+}
